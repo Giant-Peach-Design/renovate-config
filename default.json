@@ -39,6 +39,20 @@
       "groupName": "WordPress core"
     },
     {
+      "matchPackageNames": [
+        "vite",
+        "@roots/vite-plugin",
+        "laravel-vite-plugin",
+        "@vitejs/plugin-react",
+        "@vitejs/plugin-vue"
+      ],
+      "matchPackagePatterns": [
+        "^@vitejs/",
+        "vite-plugin-"
+      ],
+      "groupName": "Vite ecosystem"
+    },
+    {
       "matchUpdateTypes": [
         "major"
       ],
