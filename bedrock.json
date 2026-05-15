@@ -1,0 +1,11 @@
+  {
+    "packageRules": [
+      {
+        "matchPackagePatterns": [
+          "^wpackagist-"
+        ],
+        "separateMinorPatch": false,
+        "rangeStrategy": "bump"
+      }
+    ]
+  }

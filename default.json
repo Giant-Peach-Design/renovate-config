@@ -1,0 +1,58 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "group:allNonMajor",
+    "group:monorepos",
+    ":semanticCommits",
+    ":dependencyDashboard"
+  ],
+  "schedule": [
+    "before 6am on monday"
+  ],
+  "timezone": "Europe/London",
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 0,
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^wpackagist-plugin/",
+        "^wpackagist-theme/"
+      ],
+      "groupName": "WordPress plugins & themes"
+    },
+    {
+      "matchPackageNames": [
+        "wpengine/advanced-custom-fields-pro",
+        "gravityforms/gravityforms"
+      ],
+      "groupName": "Commercial WP plugins"
+    },
+    {
+      "matchPackageNames": [
+        "roots/wordpress",
+        "roots/wordpress-no-content"
+      ],
+      "groupName": "WordPress core"
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "dependencyDashboardApproval": true
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "schedule": [
+      "at any time"
+    ],
+    "labels": [
+      "security",
+      "dependencies"
+    ],
+    "prPriority": 10
+  }
+}
