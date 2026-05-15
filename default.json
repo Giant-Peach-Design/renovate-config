@@ -43,6 +43,7 @@
         "vite",
         "@roots/vite-plugin",
         "laravel-vite-plugin",
+        "@tailwindcss/vite",
         "@vitejs/plugin-react",
         "@vitejs/plugin-vue"
       ],
