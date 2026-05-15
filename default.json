@@ -49,7 +49,9 @@
       ],
       "matchPackagePatterns": [
         "^@vitejs/",
-        "vite-plugin-"
+        "vite-plugin-",
+        "/vite-plugin$",
+        "/vite$"
       ],
       "groupName": "Vite ecosystem"
     },
