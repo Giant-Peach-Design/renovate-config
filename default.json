@@ -53,6 +53,17 @@
       "groupName": "Vite ecosystem"
     },
     {
+      "matchPackageNames": [
+        "@roots/vite-plugin"
+      ],
+      "matchCurrentVersion": "/^\\^?1\\./",
+      "prBodyNotes": [
+        "⚠️ **Migration required** for @roots/vite-plugin v1→v2...",
+        "1. Add `assets: ['resources/images/**', 'resources/fonts/**']` to laravel() in vite.config.js",
+        "2. Remove `import.meta.glob(['../images/**', ...])` from resources/js/app.js"
+      ]
+    },
+    {
       "matchUpdateTypes": [
         "major"
       ],
