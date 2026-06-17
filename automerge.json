@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Opt-in automerge for repos using the dev->staging->manual-promotion workflow. Auto-merges non-major updates without waiting for CI status checks. ONLY safe when Renovate's base branch is an integration branch (e.g. dev) that is tested on staging before manual promotion to main — NOT when pointed at main. Remove ignoreTests once the staging test runner reports commit statuses back to GitHub.",
+  "platformAutomerge": false,
+  "ignoreTests": true,
+  "packageRules": [
+    { "matchUpdateTypes": ["minor", "patch", "pin", "digest"], "automerge": true }
+  ]
+}
