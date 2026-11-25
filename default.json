@@ -7,6 +7,9 @@
     ":semanticCommits",
     ":dependencyDashboard"
   ],
+  "constraints": {
+    "npm": "<11"
+  },
   "schedule": [
     "before 6am on monday"
   ],
